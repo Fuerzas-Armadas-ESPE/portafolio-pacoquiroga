@@ -308,11 +308,68 @@ html {
     cursor: default;
 }
 
+
+/* Habilidades */
+
+.habilidades {
+    background-color: var(--beige);
+    width: 100%;
+    height: auto;
+    padding: 4rem 0rem 4rem 0rem;
+}  
+
+
+
+.puntos1-habilidades, .puntos2-habilidades {
+    display: none;
+}
+
+.container_fondoPuntos--habilidades img {
+    display: none;
+}
+
+.cards_container--habilidades {
+    display: grid;
+    grid-template-columns: 13rem 13rem;
+    grid-template-rows: 14rem 14rem 14rem;
+    gap: 3rem;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.cards--habilidades {
+    background-color: var(--light-beige);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* filter: saturate(40%); */
+    width: 13rem;
+    height: 14rem;
+}
+
+.cards--habilidades img {
+    margin-top: .7rem;
+    width: 9rem;
+}
+
+.cards--habilidades p {
+    color: var(--navy-blue);
+    font-family: 'Cooper Hewitt';
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+    margin-bottom: .7rem;
+}
+
+
+
 /* PROYECTOS */
 
 .proyectos {
     padding: 4rem 0rem 4rem 0rem;
-    background-color: var(--beige);
+    background-color: var(--light-beige);
     width: 100%;
     height: auto;
 }
@@ -402,7 +459,7 @@ html {
 /* CONTACTO */
 .contacto {
     padding: 3rem 0rem 1rem 0rem;
-    background-color: var(--light-beige);
+    background-color: var(--beige);
     width: 100%;
     height: auto;
 }
@@ -461,7 +518,7 @@ html {
 
 /* FOOTER */
 footer {
-    background-color: var(--beige);
+    background-color: var(--light-beige);
     color: var(--white-beige);
     padding: 1rem;
     text-align: center;
@@ -483,11 +540,6 @@ footer {
     font-family: 'Cooper Hewitt';
     font-size: 1.2rem;
     letter-spacing: 1px;
-}
-
-.container_text--footer span:nth-child(1),
-.container_text--footer span:nth-child(3) {
-    color: var(--white-beige);
 }
 
 .container_text--footer img {
